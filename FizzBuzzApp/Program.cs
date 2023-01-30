@@ -14,9 +14,9 @@ namespace FizzBuzzApp
             
             FizzBuzz game = new FizzBuzz();
 
-            game.GetNumber();
+            var answer = game.GetNumber();
 
-            Console.WriteLine(game.answer);
+            Console.WriteLine(answer);
 
             Console.ReadLine();
 

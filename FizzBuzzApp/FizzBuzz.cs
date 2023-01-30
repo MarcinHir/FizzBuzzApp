@@ -8,10 +8,9 @@ namespace FizzBuzzApp
 {
     internal class FizzBuzz
     {
-        public string answer;
+    
         public string GetNumber()
         {
-
             while (true)
             {
                 if (!int.TryParse(Console.ReadLine(), out int number))
@@ -23,20 +22,19 @@ namespace FizzBuzzApp
                 {
                     if (number % 3 == 0 && number % 5 == 0)
                     {
-                        answer = "FizzBuzz";
-                        return answer;
+                        return "FizzBuzz";      
                     }
+
                     else if (number % 3 == 0)
                     {
-                        answer = "Fizz";
-                        return answer;
+                        return "Fizz";    
                     }
+
                     else if (number % 5 == 0)
                     {
-                        answer = "Buzz";
-                        return answer;
-
+                        return "Buzz";
                     }
+
                     else
                         Console.WriteLine($"Twoja liczba to {number}. Spróbuj jeszcze raz:");
                 }
