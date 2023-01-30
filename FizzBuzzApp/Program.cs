@@ -11,9 +11,11 @@ namespace FizzBuzzApp
         static void Main(string[] args)
         {
             Console.WriteLine("Witaj w grze FizzBuzz. Proszę podaj liczbę całkowitą:");
+            
             FizzBuzz game = new FizzBuzz();
 
             game.GetNumber();
+
             Console.WriteLine(game.answer);
 
             Console.ReadLine();
